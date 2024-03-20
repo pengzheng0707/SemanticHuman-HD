@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="SemanticHuman-HD: High-Resolution Semantic Disentangled 3D Human Generation">
+  <meta name="keywords" content="SemanticHuman-HD">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>SemanticHuman-HD: High-Resolution Semantic Disentangled 3D Human Generation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,6 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,85 +41,38 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">SemanticHuman-HD:</h1>
+          <h3 class="title is-1 long-title">High-Resolution Semantic Disentangled 3D Human Generation</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://pengzheng0707.github.io">Peng Zheng</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a>Tao Liu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://zili-yi.github.io/">Zili Yi</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://ruim-jlu.github.io/">Rui Ma</a><sup>1,2</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>School of Artificial Intelligence, Jilin University, Changchun, China</span>
+            <span class="author-block"><sup>2</sup>Engineering Research Center of Knowledge-Driven Human-Machine Intelligence, MOE, China</span>
+            <span class="author-block"><sup>3</sup>School of Intelligence Science and Technology, Nanjing University, Suzhou, China</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2403.10166.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +81,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2403.10166"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -137,19 +89,9 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a 
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -157,15 +99,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -178,77 +111,61 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+      <img src="./static/images/inv_00.png"
+      class="teasor"
+      alt="Semantic-aware virtual try-on image"/>
+      <p class="content has-text-justified">
+        (a) Semantic-aware virtual try-on. Given a real image, we first employ GAN inversion to obtain its semantic latent code. Subsequently, we replace the top and
+        bottom garment by manipulating the semantic latent code. Here, the top is randomly
+        generated by our model, and the bottom is disentangled from another GAN inversion
+        result. 
+        (b) Controllable image synthesis. Our method allows for generating the same person in different poses as well as rendering them from different viewpoints.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="dual-column-container">
+  <div class="left-column">
+      <!-- 左侧视频内容 -->
+      <video poster="" id="steve" autoplay controls muted loop playsinline height="300">
+        <source src="./static/videos/anim1.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
+      <video poster="" id="steve" autoplay controls muted loop playsinline height="300">
+        <source src="./static/videos/anim2.mp4"
+                type="video/mp4">
+      </video>
+      <video poster="" id="steve" autoplay controls muted loop playsinline height="300">
+        <source src="./static/videos/anim3.mp4"
+                type="video/mp4">
+      </video>
+      <p class="content has-text-justified">
+        With the pose control,
+        viewers can see the generated 3D humans in motion,
+        as well as the 3D garments.
+      </p>
   </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
+  <div class="right-column">
+      <!-- 右侧文字内容 -->
+      <video poster="" id="steve" autoplay controls muted loop playsinline height="300">
+        <source src="./static/videos/3d1.mp4"
+                type="video/mp4">
+      </video>
+      <video poster="" id="steve" autoplay controls muted loop playsinline height="300">
+        <source src="./static/videos/3d2.mp4"
+                type="video/mp4">
+      </video>
+      <video poster="" id="steve" autoplay controls muted loop playsinline height="300">
+        <source src="./static/videos/3d3.mp4"
+                type="video/mp4">
+      </video>
+      <p class="content has-text-justified">
+        We render generated results from different viewpoints.
+Notably, the rendering results include 3D garments.
+      </p>
   </div>
-</section>
-
+</div>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -258,227 +175,138 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            With the development of neural radiance fields and generative models,
+            numerous methods have been proposed for learning 3D human generation from 2D images.
+            These methods allow control over the pose of the generated 3D human and enable rendering from different viewpoints. 
+            However, none of these methods explore semantic disentanglement in human image synthesis, 
+            i.e., they can not disentangle the generation of different semantic parts, 
+            such as the body, tops, and bottoms. 
+            Furthermore, existing methods are limited to synthesize images at 512<sup>2</sup>
+            resolution due to the high computational cost of neural radiance fields. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To address these limitations, we introduce SemanticHuman-HD, 
+            the first method to achieve semantic disentangled human image synthesis. 
+            Notably, SemanticHuman-HD is also the first method to achieve 3D-aware image synthesis at 1024<sup>2</sup> resolution,
+            benefiting from our proposed 3D-aware super-resolution module.
+            By leveraging the depth maps and semantic masks as guidance for the 3D-aware super-resolution, 
+            we significantly reduce the number of sampling points during volume rendering, 
+            thereby reducing the computational cost. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Our comparative experiments demonstrate the superiority of our method. 
+            The effectiveness of each proposed component is also verified through ablation studies. 
+            Moreover, our method opens up exciting possibilities for various applications, 
+            including 3D garment generation, semantic-aware image synthesis, controllable image synthesis, 
+            and out-of-domain image synthesis. 
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+    <h2 class="title is-3">Results</h2>
+    <h4 class="title is-4">Semantic disentanglement</h4>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images/change_00.png"
+          class="teasor"
+          alt="Semantic disentanglement image"/>
+          <p class="content has-text-justified">
+            By modifying the latent code of a
+            specified semantic part, we can alter that specified part in the synthesized image.
           </p>
         </div>
       </div>
-    </div>
-    <!--/ Concurrent Work. -->
+    </section>
 
-  </div>
-</section>
+    <h4 class="title is-4">Out-of-domain image synthesis</h4>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images/ood_00.png"
+          class="teasor"
+          alt="Out-of-domain image synthesis image"/>
+          <p class="content has-text-justified">
+            To achieve out-of-domain image synthesis, we
+            assign different semantic labels to various semantic parts, e.g., if we set the semantic
+            label corresponding to the body as "male", and the label corresponding to the tops as
+            "dress", we can synthesize an image of a man wearing a dress.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section>
+    <h4 class="title is-4">Garment generation</h4>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images/garment_00.png"
+          class="teasor"
+          alt="Semantic-aware virtual try-on image"/>
+          <p class="content has-text-justified">
+            (a) Results randomly generated by our model. (b) Results obtained from GAN inversion.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <h4 class="title is-4">Conditional image synthesis</h4>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images/cond_00.png"
+          class="teasor"
+          alt="Conditional image synthesis image"/>
+          <p class="content has-text-justified">
+            For each paired set of images, the image on the
+right is synthesized conditioned on the semantic label <i>L<sub>s</sub></i> and human pose <i>P</i> of the real
+image on the left.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <h4 class="title is-4">Semantic-aware interpolation</h4>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images/interpolate_part_00.png"
+          class="teasor"
+          alt="Semantic-aware interpolation image"/>
+          <p class="content has-text-justified">
+            Red dashed rectangles on the images indicate
+chosen semantic parts during the interpolation.
+        </div>
+      </div>
+    </section>
+
+    <h4 class="title is-4">3D garment interpolation</h4>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images//interpolate_garment_00.png"
+          class="teasor"
+          alt="3D garment interpolation image"/>
+          <p class="content has-text-justified">
+            3D garment interpolation, including images and normal maps. For a closer
+            view, please zoom in to see the details.
+        </div>
+      </div>
+    </section>
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
           </p>
         </div>
       </div>

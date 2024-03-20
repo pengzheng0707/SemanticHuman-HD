@@ -155,3 +155,24 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.dual-column-container {
+  display: flex;
+  justify-content: center; /* 将两栏内容居中对齐 */
+  align-items: center;
+}
+
+.left-column, .right-column {
+  width: 450px;
+}
+
+/* 左栏的右侧紧贴网页中线 */
+.left-column {
+  margin-right: 10px; /* 调整适当的间距 */
+}
+
+/* 右栏的左侧紧贴网页中线 */
+.right-column {
+  margin-left: 10px; /* 调整适当的间距 */
+}
+
